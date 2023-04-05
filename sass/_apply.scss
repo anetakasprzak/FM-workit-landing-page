@@ -1,0 +1,138 @@
+.apply {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4.5rem 1.6rem 7.4rem 1.6rem;
+  margin-top: -4.5rem;
+
+  &__img {
+    width: 34.3rem;
+    transform: translateY(6.8rem);
+    z-index: 1;
+  }
+
+  &__text-box {
+    z-index: 2;
+    background-color: $dark-purple;
+    color: #fff;
+    padding: 3.2rem 3.1rem 3.2rem 3.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__heading {
+    font-family: "Fraunces 144pt";
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+
+  &__text {
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__bg-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .apply {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 4rem 8rem 3.9rem;
+    margin-top: -7.1rem;
+    width: 100%;
+
+    &__img {
+      width: 28.1rem;
+      transform: translate(-20rem, 12.6rem);
+    }
+
+    &__text-box {
+      padding: 4.8rem 5.6rem 5.6rem 5.6rem;
+      gap: 2.6rem;
+      width: 51.4rem;
+      margin-left: auto;
+      text-align: start;
+      position: relative;
+    }
+
+    &__heading {
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+    }
+
+    &__text {
+      margin-bottom: 0;
+    }
+
+    &__btn {
+      margin: 0;
+    }
+
+    &__bg-img {
+      display: inline-block;
+      width: 21rem;
+      height: 21rem;
+      position: absolute;
+      right: 1.5rem;
+      bottom: -10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .apply {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 16.4rem 12rem 16.4rem;
+    margin-top: -7rem;
+    width: 100%;
+
+    &__img {
+      width: 47.7rem;
+      transform: translate(-32rem, 30.7rem);
+      margin-top: -10rem;
+    }
+
+    &__text-box {
+      padding: 6.4rem 6.4rem 6.4rem 6.4rem;
+      gap: 3.2rem;
+      width: 73rem;
+    }
+
+    &__heading {
+      font-size: 5.6rem;
+      line-height: 6.4rem;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    &__btn {
+      margin: 0;
+    }
+
+    &__bg-img {
+      right: 7.5rem;
+      bottom: -6.3rem;
+    }
+  }
+}

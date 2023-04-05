@@ -1,0 +1,128 @@
+.points {
+  padding: 13rem 1.6rem 7.7rem 1.6rem;
+  background-color: $ghost-white;
+  clip-path: ellipse(150% 71% at 49% 29%);
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: -2rem;
+
+  &__point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem;
+  }
+
+  &__point--1 {
+    margin-top: 4.5rem;
+  }
+
+  &__number {
+    display: inline-block;
+    font-family: "Fraunces 144";
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3.6rem;
+    color: $dark-purple;
+    border: 1px solid #584d62;
+    border-radius: 100px;
+    width: 4.8rem;
+    height: 4.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 5px 19px 5px 19px;
+    margin-bottom: 0.8rem;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: $grey;
+  }
+
+  &__heading {
+    font-family: "Fraunces 144";
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 3.6rem;
+    margin-bottom: 1.6rem;
+    color: $dark-purple;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .points {
+    padding: 20.3rem 9.8rem 10.3rem 9.7rem;
+    clip-path: ellipse(108% 71% at 49% 29%);
+    gap: 4.8rem;
+    margin-top: -4.8rem;
+
+    &__point {
+      flex-direction: row;
+      text-align: start;
+      gap: 3.2rem;
+    }
+
+    &__point--1 {
+      margin-top: 5.6rem;
+    }
+
+    &__number {
+      flex: 0 0 auto;
+    }
+
+    &__text {
+      padding-right: 1.7rem;
+    }
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .points {
+    padding: 31rem 16.1rem 17.1rem 16.5rem;
+    gap: 2.6rem;
+    margin-top: -6.8rem;
+    flex-direction: row;
+
+    &__point {
+      flex-direction: column;
+      text-align: start;
+      gap: 2.8rem;
+      width: 33.333%;
+    }
+
+    &__point--1 {
+      margin-top: 0;
+    }
+
+    &__number {
+      flex: 0 0 auto;
+      margin-bottom: 2.8rem;
+      font-size: 24px;
+      line-height: 40px;
+      width: 5.6rem;
+      height: 5.6rem;
+    }
+
+    &__heading {
+      text-align: center;
+      font-size: 3.2rem;
+      line-height: 4rem;
+      margin-bottom: 2.8rem;
+    }
+
+    &__text {
+      padding-right: 0;
+      text-align: center;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}
